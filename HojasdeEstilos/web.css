@@ -1,0 +1,129 @@
+*{
+    text-decoration: none;
+}
+.logo{
+    max-width: 60px;
+    display: block;
+    float:left;
+    margin: 1em 0 0;
+}
+
+.logo img {
+    display: block;
+}
+/*Aplicando estilo al menú desplegable*/
+nav{
+    height:10 px; /*Se define que tendra una altura de 30 pixeles*/
+    background-color:white ; /*Se define el color de dicho menu desplegable*/
+
+}
+
+/*Etiqueta de navegacion del menu desplegable */
+nav ul { 
+    float: right; /*Se define que la tabla estara del lado derecho*/
+    margin-right: 60px; /*Se define que el margen de separación derecho con la página será de 60 pixeles*/
+
+}
+
+/*Etiqueta de navegacion del menu desplegable */
+nav ul li{
+    display:inline-block ; /*Se define como se mostrará el menu, será de forma lineal y en bloques */
+
+}
+
+/*Etiqueta para definir los atributos que se encuentran dentro del menu desplegable */ 
+nav ul li a{
+    color: #00B0F0; ; /*Las letras serán de color blanco*/
+    padding: 0 145px ; /*El relleno del área sera de 0 55px */
+    display:block; /*La forma en la que se mostrará sera en bloques */
+    line-height: 40px; /*Tendra una longitud de 40 pixeles */
+    font-size: 22px; /*El tamaño de las letras seran de 18 pixeles */
+    background-color:white ; /*Se define el color de los bloques seran de color azul */
+    transition: .4s; /*El tiempo de transición sera de 4 segundos */
+    border-color: white; /*El color del borde será blanco */
+    border:10px /*Este borde solo tendrá 10 pixeles */
+    
+}
+/*Etiqueta para que la lista de submenus del menu principal no se muestre, hasta que se 
+arrastre el mouse */
+nav ul li a:hover,
+nav ul li a.activar
+{
+  color: black;  /*El color de las letras canbiará a un color negro */
+}
+
+nav ul li:hover > ul{
+    bottom: 50px; /*Las letras del submenu estaran en la parte de en medio */
+    opacity: 1; /*Este sera el efecto que harán que las letras se vuelvan visibles */
+    visibility: visible; /*Las letras tendran un atributo visible */
+    transition: .3s linear; /*La transición será de un tiempo de 3 segundos */
+
+}
+
+nav ul ul{
+    position: absolute; /*La posición del submenu sera de forma absoluta */
+    bottom: 50px; /*Se aplicó un separado de 50 pixeles */
+    border-top:3px white solid; /*Borde en la parte superior sera un color blanco */
+    opacity: 0; /*Este hara que las letras del submenu desaparezcan */
+    visibility: hidden; /*Etiqueta para hacer que los elementos del submenu no se presente
+    a simple vista */
+
+}
+/*Etiqueta de navegacion del submenu */
+nav ul ul li{
+    width: 500px; /*Se define el ancho que tendra la tabla*/
+    display: list-item; /*Este se mostrará en forma de lista */
+    position: relative; /*Posición sera relativa */
+    
+    
+}
+/*Etiqueta de navegación del submenu */
+nav ul ul li a{
+    line-height: 80px; /*Este tendrá una separación de 50 pixeles
+    entre el menu principal y el submenú */
+     
+}
+
+.informacion{
+    color:black;
+}
+.informacion1{
+    color:black;
+}
+.informacion2{
+    color:black;
+}
+
+
+
+.page-nav{
+    color:#FFF;
+    float:right;
+    display:block;
+}
+
+
+.page-nav ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+    float:left;
+    
+}
+
+
+.page nav a{
+    color:#FFF;
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 0.75em 1em;
+    text-decoration: none; 
+    cursor: pointer;
+}
+
+.page-contents{
+    padding: 0 1em;
+    max-width: 650px;
+    margin: auto;
+}

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/*Agregando etiquetas al cuerpo de la página*/
+body{
+	line-height: 1.5; /*Etiqueta para definir la altura que tendra la casilla de la seccion*/
+	font-family: 'Poppins', sans-serif;  /*Etiqueta para definir la fuente del texto del cuerpo*/
+}
+/*Aplicando estilo a la seccion A cerca de Nosotros */
+*{
+	margin:0;  /*Etiqueta para definir el margen del pie de página con los datos de Device Line*/
+	padding:0; /*Etiqueta para definir el relleno de esapacio de area del pie de página*/
+	box-sizing: border-box; /*Etiqueta para definir el ancho y la altura total pie de página*/
+}
+.container{
+	max-width: 1170px; /*Etiqueta para definir el ancho maximo del contendor*/
+	margin:auto; /*Etiqueta para definir el margin del contenedor con un valor automatico*/
+}
+.row{
+	display: flex; /*Etiqueta para definir que el pie de pagina sea flexible alterando sus medidas*/
+	flex-wrap: wrap; /*Etiqueta para hacer que los elementos permanezcan en la misma linea*/
+}
+ul{
+	list-style: none; /*Etiqueta para definir el estilo de lista, este no presentara ninguno */
+}
+
+/*Aplicando estilo al pie de pagina */
+.footer{
+	background-color: white; /*Etiqueta para definir el color del fondo del pie de pagina*/
+    padding: 40px 0px; /*Etiqueta para definir el relleno de espacio de area que contiene los datos de la página web< */
+	margin-bottom: 5%; /*Etiqueta para definir el margen que tendra en la parte inferior*/
+	margin-right: 30%; /*Etiqueta para definir el margen que tendra de lado derecho*/
+	width: 96%; /*Etiqueta para definir la anchuta que tendra el pie de página*/
+	
+}
+/*Aplicando estilo a la seccion */
+.footer-col{
+   width: 25%;   /*Etiqueta para definir la anchura que tendra el pie de página*/
+   padding: 0 15px; /*Etiqueta para definir el relleno de espacio de area que contiene los datos de la página web*/
+}
+/*Aplicando estilo a los apartados del pie de página */
+.footer-col h4{
+	font-size: 20px; /*Etiqueta para definir el tamaño de las letras de cada apartado del pie de página*/
+	color: #00B0F0;  /*Etiqueta para definir el color de las letras de cada apartado del pie de página*/
+	text-align: center; /*Etiqueta para definir la alineación de las letras de cada apartado del pie de página*/
+	font-weight: 6000px; /*Etiqueta para definir el grosor de las letras de cada una de las secciones*/
+	text-transform: capitalize; /*Etiqueta para definir que la primera letra de cada una de las secciones sea mayuscula*/
+	margin-bottom: 30px; /*Etiqueta para definir el margen de espcio en la parte de abajo que tendran las letras de cada una de las secciones*/
+	position: relative; /*Etiqueta para posicionar las seciones del pie de página*/
+}
+/*Aplicando estilo a la barra mostrada en la parte inferior de las secciones */
+.footer-col h4::before{
+	content: ''; /*Etiqueta para definir que la linea se muestre debajo de cada una de las secciones*/
+	position: absolute; /*Etiqueta para definir la posicion de la barra que se ubica debajo de cada sección*/
+	left:0; /*Etiqueta para definir que la barra tenga desplezamiento, no se palicara ningun valor*/
+	bottom: -10px; /*Etiqueta para hacer que la barra tenga un margen de espacio*/
+	background-color: #e91e63; /*Etiqueta para definir el color de la barra de cada apartado del pie de página*/
+	height: 2px; /*Etiqueta para definir el altura de la barra de cada apartado del pie de página*/
+	box-sizing: border-box;  /*Etiqueta para definir el ancho y la altura total de la barra*/
+	width: 250px; /*Etiqueta para definir el ancho de la barra*/
+} 
+
+/*Aplicando atributos al espaciado inferior entre secciones */
+.footer-col ul li:not(:last-child){
+	margin-bottom: 15px; /*Etiqueta para definir que cada uno de los apartados tenga un espacio de 15 pixeles entre ellos*/
+}
+/*Aplicando estilo al contenido de cada una de las secciones */
+.footer-col ul li a{
+	font-size: 16px; /*Etiqueta para definir el tamaño de las letras del contenido */
+	text-align: left; /*Etiqueta para definir que el texto del contenido sea alineado a la izquierda*/
+	text-transform: capitalize;  /*Etiqueta para definir que la primera letra sea en mayuscula */
+	color: black;  /*Etiqueta para definir el color de las letras del contenido */
+	text-decoration: none;  /*Etiqueta para definir la decoracion del texto, este no tendra */
+	font-weight: 500;  /*Etiqueta para definir el grosor que tendran las letras que pertenecen al contenido*/
+	display: block;  /*Etiqueta para definir que sera presentado en bloques */
+	transition: all 0.3s ease;  /*Etiqueta para definir la transicion del contenido */
+}
+
+ /*Aplicando atributos para que el texto del contenido cambie de color */
+.footer-col ul li a:hover{
+	color: #00B0F0;  /*Etiqueta para cambiar el color de las letras al arrastrar el mouse */
+	padding-left: 8px;  /*Etiqueta para definir el relleno izquierdo de las letras del contenido */
+}
+
+ /*Aplicando atributos a los iconos */
+.footer-col .social-links a{
+	display: inline-block;  /*Etiqueta para hacer que los iconos se muestren en bloques de forma lineal */
+	height: 40px;  /*Etiqueta para definir la altura de los iconos*/
+	width: 40px; /*Etiqueta para definir el ancho de los iconos*/
+	margin:0 10px 10px 0; /*Etiqueta para definir el margen de espacio entre los iconos*/
+	text-align: center; /*Etiqueta para hacer que los iconos se alinien de forma centrada*/
+	line-height: 40px; /*Etiqueta para definir la altura que tendran todos los iconos*/
+	border-radius: 50%; /*Etiqueta para hacer que a los iconos se le qplique un borde de radio circular*/
+	transition: all 0.5s ease;  /*Etiqueta para definir la transicion de los iconos*/
+	background-color: black;
+
+}
+
+/*Aplicando efectos a los iconos */
+.footer-col .social-links a:hover{
+	background-color:#00B0F0; /*Etiqueta para definir el fondo de los iconos al arrastrar el mouse */
+
+}
+.fab {
+	color:#00B0F0; /*Etiqueta para agregar el color a las imagenes que se encuentran dentro de los iconos */
+}
+
+/*Etiqueta para hacer que el pie de página se vuelva responsive (se adapte) */
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
