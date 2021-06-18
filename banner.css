@@ -1,0 +1,63 @@
+
+*{
+    margin: 0; /* Esta etiqueta se hace uso para definir el margen */
+    padding: 0; /* Esta etiqueta sirva para definir el relleno de espacio de area */
+    box-sizing: border-box; /* Esta etiqueta calcula el ancho y la altura total de la caja */
+ }
+
+/*Aplicando estilo al banner */
+.banner{
+    width: 600px; /* Esta etiqueta define el ancho que tendra el banner */
+    height: 200px; /* Esta etiqueta define la altura que tendra el banner */
+    border:5px solid #00B0F0; /* Esta etiqueta define el color de borde que tendra el banner */
+    margin:auto; /* Esta etiqueta hace que el margen se deforma automatica */
+    animation: ban 15s infinite ease alternate running; /* Esta etiqueta se hace uso para indicar el tipo de animacion 
+                bautizandola con el nombre de ban*/
+    transition: ban 15s ease; /* Esta etiqueta define la transiición (el movimiento sera suave ) */
+    background-size: 100% 100%; /* Esta etiqueta designa el valor que tandra el tamaño el fondo */
+    margin-top: 100px; /* Esta etiqueta hace que se aplique un margen de espacio superior*/
+    border-radius: 50px; /* Esta etiqueta se encarga de aplicar un radio de borde al banner para que esta en las 
+                         esquinas sean circulares*/
+} 
+
+/* Aplicando estilo a las imagenes de fondo del banner */
+@keyframes ban{
+    
+    0%, 30% /* Este porcentaje definido hace que el porcentaje de transición marcado para que aparezca la siguiente
+            imagen*/
+    {
+        background-image: url("publicidad/chat.png") /* Esta etiqueta designa que el fondo de pantalla sea una imagen */
+    }
+    
+    
+    35%, 65%/* Este porcentaje definido hace que el porcentaje de transición marcado para que aparezca la siguiente
+            imagen*/
+    {
+        background-image: url("publicidad/Devicee2.png") /* Esta etiqueta designa que el fondo de pantalla sea una imagen */
+        
+    }
+    
+     
+    70%, 100% /* Este porcentaje definido hace que el porcentaje de transición marcado para que aparezca la siguiente
+            imagen*/
+    {
+        background-image: url("publicidad/notificacion.png")  /* Esta etiqueta designa que el fondo de pantalla sea una imagen */
+       
+    }
+    
+     /* Etiqueta para hacer que el banner sea responsive */
+    @media only screen and (min-width:400px) and (max-width:700px)
+    {
+        .ban{
+            width: 400px;
+            height: 300px;
+        }
+    }
+}
+
+
+
+
+
+
+
