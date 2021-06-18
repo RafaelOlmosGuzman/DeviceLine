@@ -1,0 +1,258 @@
+<!DOCTYPE html> <!--Estructura de la página web en HTML5-->
+<html lang="en">
+<HTML>  <!--Eiqueta de inicio de la página web-->
+    <!--Este es el apartado del encabezado que conforma la página web-->
+   <head> 
+    <title>Device Line</title>  <!--En este apartado se agrega el titulo que tendra la página web-->
+    <!--En esta sección se agregan todos los links de forma local, que llamaran a la hoja de estilos que hace uso esta
+     página web-->
+    <link rel="stylesheet" type="text/css" href="HojasdeEstilos/banner.css">  
+    <link rel="stylesheet" type="text/css" href="HojasdeEstilos/estilopiedepagina.css">
+    <link rel="stylesheet" type="text/css" href="HojasdeEstilos/estilosDeviceLine.css">
+    <link rel="stylesheet" type="text/css" href="HojasdeEstilos/estilosflotante.css">
+    <link rel="stylesheet" type="text/css" href="HojasdeEstilos/footer.css">
+    <link rel="stylesheet" type="text/css" href="HojasdeEstilos/lightbox.min.css">
+    <link rel="stylesheet" href="HojasdeEstilos/footer.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <meta charset="utf-8"> <!--Etiqueta para definir el tipo de caracteres que seran utilizados en la página web-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <script src="https://kit.fontawesome.com/a1da9a0537.js" crossorigin="anonymous"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script> <!--Etiqueta para hacer referenica a código de Java Script-->
+	<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0">
+ 
+    </head> <!--Con la etiqueta head con una diagonal se cierra el encabezado-->
+
+    <!--Cuerpo de la página web -->
+    <body> <!--Etiqueta para definir el inicio de la págian web--> 
+        <header class="header"> <!--Esta etiqueta contiene algunos elementos del encabezado-->
+        <br>&nbsp; <!--Esta etiqueta son solo saltos de lìneas para manetener espacios entre secciones-->
+        <div id="contenedor"> <!--Esta etiqueta es solo para definir diviciones-->
+            <div class="device"> <!--Esta etiqueta al igual define una division, colocando el nombre de la clase para agregar atributos 
+                                 al elemento que se encuentre dentro de esta-->
+
+                <img src='LogotiposDeviceLine.png'> </img>  <!--Con la etiqueta img y haciendo referencia a ella se agrega una imagen
+                                                             logo de la página web-->
+                
+       </div> <!--Inicio de una nueva división-->
+        <form> <!--Etiqueta que representa un formulario-->
+            <fieldset> <!--Eqiqueta para definir grupos de campos-->
+                <input tipe="search" placeholder="Ingrese Búsqueda"/>  <!--Este solo se utiliza cuando se tiene un valor, el valor sera el 
+                                                                        ingrese busqueda-->
+                <button type="submit">  <!--Esta etiqueta permite que al introducir la busqueta diriga a las secciones del producto que 
+                                            que inserto a buscar-->
+
+                    <i class="fas fa-search"><b>Buscar</b></i> <!--Esta etiqueta es para hacer referecia a la clase de un icono de la web
+                                                                insertar -->
+
+            </fieldset> <!--Término de la etiqueta de los campos-->
+        </form> <!--Termino de la etiqueta para representar el formulario-->
+        </div> <!--Aqui es donde termina la division del apartado de búsqueda-->
+        </header> <!--Fin de los elementos que conformara el encabezado de la página web-->
+
+        <!--Apartado para el formulario-->
+        <a href="formulario/FormularioSuscribreteaDeviceLine.html" class="btn-wsp" target="_blank"> <!--Aqui se añade el formulario que
+                                                                    tendrá la págian web-->
+            <i class="fas fa-comment-dots"></i> <!--Este es el partado para agregar un icono que ira como referencia para el formulario-->
+            </a> <!--Fin de la etiqueta para enlazar al formulario-->
+        <br>&nbsp;  <!--Esta eqtiqueta son solo saltos de lìneas para manetener espacios entre secciones-->
+        <br>&nbsp;  <!--Esta eqtiqueta son solo saltos de lìneas para manetener espacios entre secciones-->
+        <br>&nbsp;  <!--Esta eqtiqueta son solo saltos de lìneas para manetener espacios entre secciones-->
+            
+            <!--Apartado menu de navegación-->
+            <nav> <!--Inicio de la etiqueta de navegación en donde enlazara a otras páginas web-->
+                <ul> <!--Con esta etiqueta se crea una lista no ordenada de las seciones principales del menú-->  
+                    <!--Con la etiqueta li se crea una lista ordenada-->
+                    <li>  <a class="activar" href="#"> COMPUTACIÓN   </a>  
+
+                    <ul> <!--Esta etiqueta muestra los submenus que contiene cada menu principal en esta ocasión AUDIO-->
+                        <!--Apartado para crear los elementos de una lista ordenada, haciendo referencia a otra página de forma local,
+                        para que esta al dar clic dirija a esa sección-->
+                        <li><a  href="GaleriaComputacion/Laptops.html"> Laptops </a></li>
+                        <li><a href="GaleriaComputacion/Accesorios_para_Laptops.html"> Accesorios Laptops </a> </li>
+                        <li><a href="GaleriaComputacion/MouseyTeclado.html"> Mouse y Teclados </a></li>
+                        <li><a href="GaleriaComputacion/Gamers.html"> Gamers </a></li>
+                        <li><a href="GaleriaComputacion/DiscosSolidos.html"> Discos sólidos </a></li>
+                        <li><a href="GaleriaComputacion/ReguladoresdeVoltaje.html"> Reguladores </a></li>
+    
+                    </ul> <!--Fin de la etiqueta ul de la lista no ordenada-->
+                    </li> <!--Fin de la etiqueta li de la lista ordenada-->
+
+                    <li> <a href="#"> AUDIO  </a> <!--Esta es una sección del menu principal, se agrega el # ya que no hace referencia a otra
+                                                    página web-->
+                    <ul> <!--Esta etiqueta muestra los submenus que contiene cada menu principal en esta ocasión AUDIO-->
+                        <li><a href="GaleriaAudio/Audifonos.html"> Audífonos </a></li>
+                        <li><a href="GaleriaAudio/Bocinas.html"> Bocinas </a></li>
+                        <li><a href="GaleriaAudio/Parlantes.html"> Parlantes </a></li>
+                        <li><a href="GaleriaAudio/LucesparaFiesta.html"> Luces para fiesta </a> </li>
+                        <li><a href="GaleriaAudio/Microfono.html"> Micrófonos </a></li>
+                        <li><a href="GaleriaAudio/Transmisores.html"> Transmisores</a></li>
+                    </ul> <!--Fin de la etiqueta de los submenus del menu principal-->
+                    </li> <!--Fin de la etiqueta li de la lista ordenada-->
+                    
+                    <li>  <a href="#"> FOTOGRAFÍA  </a>  <!--Esta es una sección del menu principal, se agrega el # ya que no hace referencia a otra
+                                                             página web-->
+                    <ul> <!--Esta etiqueta muestra los submenus  que contiene cada menu principal en esta ocasión FOTOGRAFÍA-->
+                        <li><a href="GaleriaVideo/CamarasDigitales.html"> Cámaras Digitales </a></li>
+                        <li><a href="GaleriaVideo/Accesorios.html"> Accesorios </a></li>
+                        <li><a href="GaleriaVideo/CamarasdeVideo.html"> Cámaras de video</a></li>
+                        <li><a href="GaleriaVideo/WebCam.html"> Web cam </a></li>
+                        <li><a href="GaleriaVideo/CamaraAction.html"> Cámara de acción </a></li>
+                        <li><a href="GaleriaVideo/Camara360.html"> Cámara de 360º </a></li>
+                    </ul> <!--Fin de la etiqueta de los submenus del menu principal-->
+                    </li> <!--Fin de la etiqueta li de la lista ordenada-->
+
+                    <li>  <a href="#"> REDES  </a>  <!--Esta es una sección del menu principal, se agrega el # ya que no hace referencia a otra
+                                                        página web-->
+                    <ul> <!--Esta etiqueta muestra los submenus  que contiene cada menu principal en esta ocasión de REDES-->
+                        <li><a href="GaleriaRedes/CablesUSB.html"> Cables USB </a></li>
+                        <li><a href="GaleriaRedes/CableHDMI.html"> Cable HDMI </a></li>
+                        <li><a href="GaleriaRedes/CableUTP.html"> Cable UTP </a></li>
+                        <li><a href="GaleriaRedes/RedesWifi.html"> Redes Wifi </a></li>
+                        <li><a href="GaleriaRedes/Switches.html"> Switches </a></li>
+                        <li><a href="GaleriaRedes/Routers.html"> Ruteadores </a></li>
+                    </ul> <!--Fin de la etiqueta de los submenus del menu principal-->            
+                    </li> <!--Fin de la etiqueta li de la lista ordenada-->
+
+                    <li>  <a href="#"> ENERGÍA  </a> <!--Esta es una sección del menu principal, se agrega el # ya que no hace referencia a otra
+                                                        página web-->
+                    <ul> <!--Esta etiqueta muestra los submenus  que contiene cada menu principal en esta ocasión de ENERGÍA-->
+                        <li><a href="GaleriaEnergia/Baterias.html"> Baterias </a></li>
+                        <li><a href="GaleriaEnergia/Cargadores.html"> Cargadores </a></li>
+                        <li><a href="GaleriaEnergia/PowerBank.html"> Power Bank </a></li>
+                        <li><a href="GaleriaEnergia/TiraMulticontactos.html"> Tiras Multicontactos </a></li>
+                        <li><a href="GaleriaEnergia/Multimetros.html"> Multimetros </a></li>
+                        <li><a href="GaleriaEnergia/NoBreakss.html"> No Breaks </a></li>
+                    </ul> <!--Fin de la etiqueta de los submenus del menu principal--> 
+                    </li> <!--Fin de la etiqueta li de la lista ordenada-->
+
+                    <li>  <a href="#"> SEGURIDAD   </a> <!--Esta es una sección del menu principal, se agrega el # ya que no hace referencia
+                         a otra página web-->
+                    <ul> <!--Esta etiqueta muestra los submenus  que contiene cada menu principal en esta ocasión de ENERGÍA-->
+                        <li><a href="GaleriaSeguridad/ControlEntrada.html"> Control de Entrada </a></li>
+                        <li><a href="GaleriaSeguridad/CajasdeSeguridad.html"> Cajas de Seguridad </a></li>
+                        <li><a href="GaleriaSeguridad/LectoresdeHuella.html">Lectores de Huella </a></li>
+                        <li><a href="GaleriaSeguridad/DetectorsBilletes.html"> Detectors de Billetes </a></li>
+                        <li><a href="GaleriaSeguridad/Alarmas.html"> Alarmas </a></li>
+                        <li><a href="GaleriaSeguridad/CamarasCTVC.html"> Cámaras CCTV </a></li>
+                    </ul> <!--Fin de la etiqueta de los submenus del menu principal--> 
+                    </li> <!--Fin de la etiqueta li de la lista ordenada-->
+                   </ul> <!--Fin de la etiqueta del que indica el final del menú principal-->
+            </nav> <!--Fin de la etiqueta de las secciones para los enlaces de navegación-->
+    
+
+    <br>&nbsp; <!--Esta etiqueta son solo saltos de lìneas para manetener espacios entre secciones-->
+    <br>&nbsp; <!--Esta etiqueta son solo saltos de lìneas para manetener espacios entre secciones-->
+    <br>&nbsp; <!--Esta etiqueta son solo saltos de lìneas para manetener espacios entre secciones-->
+
+    <!--Apartado productos oferta-->
+    <div class=oferta> <!--Etiqueta para la división con el nombre de la clase Oferta-->
+       <h4>¡Oferta del dia! 50% </h4> <!--Etiqueta en donde ira el titulo del encabezado con nivel h4-->
+    </div>  <!--Fin de la eqtiqueta de la clase oferta-->
+
+    <section class="galeria"> <!--Etiqueta para agregar una sección que lleva el nombre de galeria, aqui se muestra la galeria de 
+                                imagenes de la página web-->
+    <div class="contenedor"> <!--Etiqueta de división que contendra la galeria de imagenes-->
+        
+        <article class="galeria__columna">  <!--Etiqueta para definir el contenido especifico de la galeria-->
+        <a href="img/Laptop.jpg" data-lightbox="mygallery" data-title="Laptopr Hp"><img src="img/Laptop.jpg"></a>
+        </article> <!--Fin de la etiqueta que define el contenido especifico de la galeria-->
+
+        <article class="galeria__columna">  <!--Etiqueta para definir el contenido especifico de la galeria-->
+        <a href="img/Cargador.jpg" data-lightbox="mygallery"><img src="img/Cargador.jpg"></a>
+        </article> <!--Fin de la etiqueta que define el contenido especifico de la galeria-->
+
+        <article class="galeria__columna"> <!--Etiqueta para definir el contenido especifico de la galeria-->
+        <a href="img/Bocina.jpg" data-lightbox="mygallery"><img src="img/Bocina.jpg"></a>
+        </article>  <!--Fin de la etiqueta que define el contenido especifico de la galeria-->
+
+        <article class="galeria__columna"> <!--Etiqueta para definir el contenido especifico de la galeria-->
+        <a href="img/Regulador.webp" data-lightbox="mygallery"><img src="img/Regulador.webp"></a>
+        </article> <!--Fin de la etiqueta que define el contenido especifico de la galeria-->
+    
+    </div> <!--Fin de la división de la clase contenedor que contendra las imagenes de la galeria-->
+
+    </section> <!--Fin de la sección que que contiene la gelaria de imagenes-->
+
+    <br>&nbsp;  <!--Esta etiqueta son solo saltos de lìneas para manetener espacios entre secciones-->
+
+    <div class="contactanos"> <!--Etiqueta de división que tendra el nombre de contactos-->
+        <table> <!--Etiqueta para la creación de una tabla-->
+            <tr> <!--Etiqueta para agregar una fila dentro de la tabla-->
+                <th><h3> Contáctanos </h3> </th> <!--Etiqueta para agregar una celda dentro de la fila-->
+            </tr> <!--Fin de la etiqueta de agregar una fila dentro de la tabla-->
+        </table> <!--Fin de la creación de la tabla-->
+    </div> <!--Fin de la división de la clase contactos-->
+    <br>&nbsp; <!--Esta etiqueta son solo saltos de lìneas para manetener espacios entre secciones-->
+
+    <!--Sección Video de la página web-->
+    <video controls  autoplay loop  muted> <!--Atibutos que le pueden gregar a un video si es que fuera necesario-->
+        <!--controls muestra los controles para que el usuario pueda pausae el audio, bajar el volumen  o dejar de reproducir el video-->
+        <!--La etiqueta source especifica recursos de medios multiples-->
+        <!--autoplay hace que el video se reproduzca de forma automatica-->
+        <!--loop, hace que el video siga reproduciendose continuamente-->
+        <!--muted para quitar el audio al video si es que este tiene--->
+        <source src="DeviceLine.mp4" type="video/mp4"> 
+        <source src="DeviceLine.mp4.ogg" type="video/ogg">
+        <source src="DeviceLine.mp4.mp4" type="video/webm"> 
+     </video> <!--Fin de la etiqueta video-->
+
+     <!--Sección Audio de la página web -->
+     <audio controls autoplay loop> <!--Eqtiqueta audio agregando algunos atributos-->
+        <!--controls muestra los controles para que el usuario pueda pausae el audio, bajar el volumen  o dejar de reproducir el video-->
+        <!--loop, hace que el audio siga reproduciendose continuamente-->
+        <!--autoplay hace que el audio se reproduzca de forma automatica-->
+        <source src="PrDeviceLine.mp3" type="Audio/mp3">
+        <source src= "PrDeviceLine.mp3" type="Audio/ogg">
+    </audio> <!--Fin de la etiqueta audio-->
+
+
+    <!--Sección del pie de página de la págian web-->
+    <footer class="footer"> <!--Etiqueta que contendra el pie de página de la página web-->
+        <div class="container"> <!--Etiqueta de división con el nombre de la clase container-->
+            <div class="row"> <!--Etiqueta de división con el nombre row-->
+                <div class="footer-col"> <!--Etiqueta que contendra cada columna dentro de una división con el nomnbre footer-col-->
+                    <h4>Acerca de Nosotros</h4> <!--Esta etiqueta el titulo del encabezado con un nivel de h4-->
+                    <ul> <!--Etiqueta para mostrar una lista de forma desordenada-->
+                        <li><a href="#"></a></li>
+                        <li><a href="#"> <i class="fas fa-house-user"></i> Device Line </a></li>
+                        <li><a href="#"> <i class="fas fa-laptop"></i> Servicios</a></li>
+                        <li><a href="#"> <i class="fas fa-book-reader"></i> Politica de Privacidad</a></li>
+                        <li><a href="#"></a></li>
+                    </ul> <!--Fin de la etiqueta de la lista de forma desordenada-->
+                </div> <!--Fin de la etiqueta de división con el nombre footer-col-->
+
+                <div class="footer-col"> <!--Etiqueta que contendra cada columna dentro de una división con el nomnbre footer-col-->
+                    <h4>Servicios a Clientes</h4> <!--Esta etiqueta el titulo del encabezado con un nivel de h4-->
+                    <ul>
+                        <li><a href="#"><i class="fab fa-whatsapp"></i> 951897234</a></li>
+                        <li><a href="#"> <i class="fas fa-phone-square-alt"></i> 2361124560</a></li>
+                        <li><a href="#"> <i class="fab fa-telegram"></i> 2361274859</a></li>
+                        <li><a href="#"> <i class="far fa-envelope"></i> deviceline@gmail.com</a></li>
+                    </ul>  <!--Fin de la etiqueta de la lista de forma desordenada-->
+                </div> <!--Fin de la etiqueta de división con el nombre footer-col-->
+
+                <div class="footer-col"> <!--Etiqueta que contendra cada columna dentro de una división con el nomnbre footer-col-->
+                    <h4>Ubicación</h4> <!--Esta etiqueta el titulo del encabezado con un nivel de h4-->
+                    <ul>
+                        <li><a href="#"> <i class="fas fa-street-view"></i> Encuentranos en: Electrónica DeviceLine S.A. de C.V
+                                Colonia Morelos  No. 3408, San Juan Bautista Cuicatlan, México D. F., C.P. 68604 </a></li>
+                        <li><a href="https://www.google.com.mx/maps/place/San+Juan+Bautista+Cuicatl%C3%A1n,+Oax./@17.8023558,-96.9639558,16z/data=!4m5!3m4!1s0x85c68452131ec6f9:0xf20e5278dda85a72!8m2!3d17.8000359!4d-96.9612869">Google Maps <i class="fas fa-map-marker-alt"></i> </a></li>
+                    </ul>  <!--Fin de la etiqueta de la lista de forma desordenada-->
+                </div> <!--Fin de la etiqueta de división con el nombre footer-col-->
+
+                <div class="footer-col"> <!--Etiqueta que contendra cada columna dentro de una división con el nomnbre footer-col-->
+                    <h4>Redes Sociales</h4> <!--Esta etiqueta el titulo del encabezado con un nivel de h4-->
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div> <!--Fin de la etiqueta de división con el nombre footer-col-->
+                </div> <!--Fin de la etiqueta de división de la clase row-->
+            </div> <!--Fin de la etiqueta de división de la clase container-->
+        </div> <!--Fin de la etiqueta de división con el nombre footer-->
+   </footer> <!--Fin de la etiqueta con el nomnre del encabezado-->
+
+    </body> <!--Fin de la etiqueta del cuerpo de la página web Deice Line-->
+</HTML> <!--Fin de la etiqueta del comienzo de la página web -->
