@@ -1,0 +1,283 @@
+*{
+    margin:0; /*Aquí se declara el margen de toda la página web*/
+    padding: 0; /*En esta etiqueta se declara el area de relleno*/
+    text-decoration:none; /*No se aplicara ninguna decoración, para quitar el subrayado*/
+    list-style: none; /*No se aplicara ningún estilo*/
+
+}
+/* Estilos del cuerpo*/
+body{
+    margin-left:100;  /* Aplicando un margen a la izquierda de 100 este puede ser en px, cm, % etc. */
+    padding: 0;  /*En esta etiqueta se declara el area de relleno*/
+    background:black; /*El color del cuerpo de la página weeb será de color negro*/
+    font-family: Trebuchet MS; /*El tipo de texto es el declarado*/
+    width: 1400px;
+}
+
+#contenedor{
+    display:table-cell;
+    vertical-align:middle;
+    height: 50px;
+}
+
+
+/*Aplicando estilo a el logotipo*/
+.device{
+    height:0.5px; /*Tendra un ancho de .10px*/
+    width: 400px; /*Se define la altura de la imagen*/
+    margin-left: 35px; /*Se define el margen que tendra la imagen del lado izquierdo con la página*/
+    margin-top:-20px;  /*Se define el margen que tendra la imagen del lado de arriba con la página*/
+    
+}
+form{
+    width:510px;
+    margin: 0px 800px auto;
+}
+
+fieldset{
+    margin-top:20px;
+    background-color:#00B0F0; 
+    border:0 px solid;
+    border-radius:10px;
+    padding: 5px 0 0 10px;
+}
+
+input.button{
+    position: relative;
+    width: 5px;
+    height: 0px;
+    padding:0;    
+     
+}
+
+input{
+    color:white;
+    border:none;
+    margin-top:0px;
+    border-radius:10px;
+    text-align: center;
+    margin-bottom:4px;
+    font-size:30px;
+}
+/*Aplicando estilos al video*/
+video{ 
+    height: auto; /*Esta atributo define el tamaño que tendra el video*/
+    width: 400px; /*Este atributo define el ancho que tendra el video*/
+    margin-left: 490px; /*Este atributo define el margen de espacio izquierdo que tendra el video, este atributo se implemento
+                        con el fin de colocar el video de forma central*/
+    margin-top:10px; /*Este atributo indica el margen que mantendra con el menu principal*/
+    border-radius: 20px; /*Este atributo sirve para indicar que se aplicara un borde de radio a las esquinas del video*/
+    
+}
+
+/*Aplicando estilos al audio*/
+audio{
+    margin-left:560px; /*Este atributo define el margen de espacio izquierdo que tendra el audio, este atributo se implemento
+    con el  fin de colocar el video de forma central*/
+}
+
+button{
+    width: 100px;
+    border:none;
+    background:#00B0F0;
+    float:center;
+    margin-right:10px;
+    font-size:25px;
+}
+
+.fa-search{
+    color:black;  
+}
+
+/*Aplicando estilo al icono de notificación*/
+.notificacion{
+    height: 10px; /*Se define que tendra una altura de 10 pixeles*/
+    width: 50px; /*Se define el ancho del icono que será de 50 pixeles*/
+    margin-left: 25px; /*Se define el margen que tendra la imagen del lado de izquierdo con la página*/
+
+    margin-top: 10px; /*Se define el margen que tendra la imagen del lado de arriba con la página*/
+}
+
+/*Aplicando estilo al menú desplegable*/
+nav{
+    height:10 px; /*Se define que tendra una altura de 30 pixeles*/
+    background-color:lightseagreen; /*Se define el color de dicho menu desplegable*/
+
+}
+
+/*Etiqueta de navegacion del menu desplegable */
+nav ul { 
+    float: right; /*Se define que la tabla estara del lado derecho*/
+    margin-right: 60px; /*Se define que el margen de separación derecho con la página será de 60 pixeles*/
+
+}
+
+/*Etiqueta de navegacion del menu desplegable */
+nav ul li{
+    display:inline-block ; /*Se define como se mostrará el menu, será de forma lineal y en bloques */
+
+}
+
+/*Etiqueta para definir los atributos que se encuentran dentro del menu desplegable */ 
+nav ul li a{
+    color: white; /*Las letras serán de color blanco*/
+    padding: 0 55px ; /*El relleno del área sera de 0 55px */
+    display:block; /*La forma en la que se mostrará sera en bloques */
+    line-height: 38px; /*Tendra una longitud de 40 pixeles */
+    font-size: 18.5px; /*El tamaño de las letras seran de 18 pixeles */
+    background-color:#00B0F0 ; /*Se define el color de los bloques seran de color azul */
+    transition: .4s; /*El tiempo de transición sera de 4 segundos */
+    border-color: white; /*El color del borde será blanco */
+    border:10px /*Este borde solo tendrá 10 pixeles */
+    
+}
+/*Etiqueta para que la lista de submenus del menu principal no se muestre, hasta que se 
+arrastre el mouse */
+nav ul li a:hover,
+nav ul li a.activar
+{
+  color: black;  /*El color de las letras canbiará a un color negro */
+}
+
+nav ul li:hover > ul{
+    bottom: 50px; /*Las letras del submenu estaran en la parte de en medio */
+    opacity: 1; /*Este sera el efecto que harán que las letras se vuelvan visibles */
+    visibility: visible; /*Las letras tendran un atributo visible */
+    transition: .3s linear; /*La transición será de un tiempo de 3 segundos */
+
+}
+
+nav ul ul{
+    position: absolute; /*La posición del submenu sera de forma absoluta */
+    bottom: 50px; /*Se aplicó un separado de 50 pixeles */
+    border-top:1px white solid; /*Borde en la parte superior sera un color blanco */
+    opacity: 0; /*Este hara que las letras del submenu desaparezcan */
+    visibility: hidden; /*Etiqueta para hacer que los elementos del submenu no se presente
+    a simple vista */
+
+}
+/*Etiqueta de navegacion del submenu */
+nav ul ul li{
+    width: 300px; /*Se define el ancho que tendra la tabla*/
+    display:inline; /*Este se mostrará en forma de lista */
+    position: relative; /*Posición sera relativa */
+    
+    
+}
+/*Etiqueta de navegación del submenu */
+nav ul ul li a{
+    line-height: 54.5px; /*Este tendrá una separación de 50 pixeles
+    entre el menu principal y el submenú */
+    width: 300px;
+    margin-left: 0px;
+     
+}
+
+h1{
+    font-size: 70px; 
+    color:#fff;
+    text-align: center;
+}
+/*Etiqueta de la clase contenedor que define la parte de la galeria de fotos */
+.contenedor{  
+  width:100%; /*Ocupará un ancho del 100% */
+  margin: auto; /*Tendrá un margen automático*/
+}
+
+/*Etiqueta para la clase contactos- letras*/
+
+.contactanos{
+    
+    color:black; /*Se define el color de las letras serán negras  */
+
+    width: 1400px; /*Separación del 1400px, para que este se ubique en el centro de la página */
+    
+}
+/*Etiqueta para la tabla que se encuentra dentro de la clase contactos */
+.contactanos table {
+    
+    margin: 0 auto; /*Etiqueta para el margen tendrá 0 */
+    background-color: #00B0F0; /*El color de la tabla es de color azul */
+    font-size: 20px;
+    
+}
+
+.oferta h4{
+    font-family: 'Trebuchet MS';
+    color: white;
+    text-align: center;
+    margin-left:450px;
+    font-size: 45px;
+    text-transform:uppercase;
+    display: block;
+    background-color:red;
+    border-radius: 20px;
+    width: 500px;
+
+}
+img{
+    width: 100%;
+    border-radius: 10%;
+    margin:auto;
+    animation: galeria_columna 5s infinite linear alternate;
+}
+.galeria__columna{
+    margin: 4px;
+    filter: bluescale(0.1%);
+    border-radius: 10px;
+}
+
+.galeria__columna:hover{
+   filter: grayscale(100%);
+}
+.galeria .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+
+
+@media(min-width:480px){
+    .galeria__columna{
+        width: 30%;
+    }
+}
+@media(min-width:728px){
+    .galeria__columna{
+        width: 22%;
+    }
+}
+
+
+@media(min-width:1024px){
+    .galeria__columna{
+        width: 24%;
+    }
+    .contenedor{
+        width: 1024px;
+    }
+}
+
+
+@media(min-width:1024px){
+    .contenedor{
+        width: 1024px;
+    }
+}
+
+@media (min-width:1200px){
+    .banner {
+        
+        background-image: url("https://conceptodefinicion.de/wp-content/uploads/2020/07/publicidad-1.jpg");
+    }
+}
+
+
+
+
+
+
+
+
+
+
